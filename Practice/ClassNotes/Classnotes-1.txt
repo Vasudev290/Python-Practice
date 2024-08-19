@@ -314,11 +314,15 @@ max()
 
 
 Special Operator
-    a)identity operators   - is , is not 
+  a)identity operators   - is , is not 
 	b)Membership operators - in , not in 
 
 Identity Operators:  
 - address comparision
+
+a = 100 
+b = 100 
+print(a is b)
 
 a = 100 
 b = 100 
