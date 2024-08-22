@@ -34,4 +34,6 @@ print(10+5*3)
 '''Find the output print(20-10/5*2)'''
 print(20-10/5*2)
 #Output - 16.0
+'''Find the output print(20-10/5*2)'''
 print(2**3**(2%10))
+#Output - 512
