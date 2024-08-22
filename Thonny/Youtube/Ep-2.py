@@ -31,7 +31,7 @@ print("'It's Hero Time!'N\n\t-Ben 10")
 
 
 
-
+# Sample work while loop 
 i=1
 while i<=10:
     if i==5:
