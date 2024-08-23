@@ -1,4 +1,4 @@
 #User Input
-num= input(541)
+num= input()
 print(num)
 print(type(num))
