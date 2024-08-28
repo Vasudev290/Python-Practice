@@ -13,3 +13,4 @@ if num>= 100 and num <= 999:
     print("Yes")
 else:
     print("given three digits not a 3 digits number")
+
