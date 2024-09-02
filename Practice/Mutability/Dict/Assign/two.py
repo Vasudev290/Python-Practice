@@ -499,45 +499,19 @@ users=[{"id":1,"name":"Teodor","email":"theaven0@yahoo.com","gender":"Male"},
 {"id":499,"name":"Kittie","email":"kmccalliondu@miibeian.gov.cn","gender":"Female"},
 {"id":500,"name":"Yuma","email":"ymoyesdv@flavors.me","gender":"Non-binary"}]
 
-print(type(users))
-
-#Print all the Employee Name
-#Forloop
-for user in users:
-    print(user['name'])
-
-for user in users:
-    print(user) 
-
-#Whileloop
-i=0
-while i<=3:
-    print(users)
-    i=i+1 
- 
-#Print all the male and female employee
-#For Loop
 no_of_male_users= 0
 no_of_female_users= 0
 
-for user in users:
-    if user['gender'] == 'Male':
-         no_of_male_users+= 1
-    else:
-         no_of_female_users += 1
-print("No of Male Employee:",no_of_male_users)
-print("No of Female Employee:", no_of_female_users)
 
-""" #While Loop
+#While loop
 i=0
 while i<=len(users)-1:
-    if user[i]['gender'] == 'Male':
-         no_of_male_users+= 1
-    elif user[i]['gender'] == 'Female':
-         no_of_female_users += 1
-    i+i+1
+    if users[i]['gender'] == 'Male':
+        no_of_male_users = no_of_male_users + 1
+    elif users[i]['gender'] == 'Famale':
+        no_of_female_users = no_of_female_users + 1
+    i=i+1
+    
 print("No of Male Employee:",no_of_male_users)
-print("No of Female Employee:", no_of_female_users)
- """
-
-
+print("No of Female Employee:",no_of_female_users)
+        

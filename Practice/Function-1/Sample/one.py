@@ -24,3 +24,16 @@ def wish(a,b,c,d):
 result= wish(1,2,3,100)
 print(result)
 
+#02/09/23
+def vasu():
+    return
+print("Vasu learning python","But geting..!")
+
+vasu()
+vasu()
+vasu()
+
+
+def add(a,b):
+    print(a+b)
+add(10,29)
