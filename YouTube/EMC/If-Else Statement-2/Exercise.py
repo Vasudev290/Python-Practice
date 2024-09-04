@@ -24,8 +24,29 @@ else:
 
 ''' 4. Get input for a number and find it is even or odd'''
 
-a= int(input("Enter a Value :"))
+""" a= int(input("Enter a Value :"))
 if(a%2 == 0):
     print("It's a Even Number")
 else:
-    print("No it's Odd Number")
+    print("No it's Odd Number") """
+
+#
+
+""" Score= int(input("Score: "))
+if(Score<35):
+    print("Poor Student")
+elif(Score>35 and Score<70):
+    print("Average Student")
+else:
+    print("Good Student") """
+
+
+Score= int(input("Score: "))
+if(Score<35):
+    print("Poor Student")
+elif(Score>35 and Score<70):
+    print("Average Student")
+elif(Score>70 and Score<100):
+    print("Good Student")
+else:
+    print('Invaild Marks')
