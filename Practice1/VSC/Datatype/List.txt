@@ -1,0 +1,52 @@
+14 datatypes
+==============
+1.int   = numbers
+2.str  = letters
+3.float = floating value 10000.00
+4.bool = 1-true, 0-false
+5.complex = imaginer value
+6.range = range(10, [0,9])
+
+7.list = if you want to represent group of elements as one entity - nothing but list
+8.tuple = exactly list type only but read only version list
+9.set = group of unique elements / duplicate are not allowed
+10.dict = group of key : value pains
+
+11.bytes = if you want to represent group of elements, range from (0,256)(Immutable)
+12.bytearray if you want to represent group of elements, range from (0,256) (mutable)
+13.frozenset
+14.None
+
+In-bulit Function
+==================
+1.all
+2.any
+3.bin
+4.breakpoint
+5.char
+6.compile
+7.dir
+8.eval
+9.filter
+10.format
+11.globals
+12.hash
+13.hex
+14.id
+15.len
+16.locals
+17.max
+18.min
+19.map
+20.memoryview
+21.next
+22.object
+23.oct
+24.reversed
+25.slice
+26.sorted
+27.sum
+28.super
+29.type
+30.vars
+31.zip
