@@ -50,3 +50,26 @@ In-bulit Function
 29.type
 30.vars
 31.zip
+
+mutable & Immutable 14 datatypes;
+1.list         Another 10 datatypes are Immutable
+2.set           int,str,float,bool,complex,tuple,range,bytes,frozenset,None
+3.dict
+4.bytearray
+
+Immutability;
+------------
+Once we create object, we can't perform any changes in that object
+
+a=100   object id 345677 both id value are same
+b=100
+
+mutable;
+--------
+Once we create object, we can perform any changes in that object
+
+list= [10,20,30]
+print(list)
+
+list[0] = 15
+print(list)   #[15,20,30]
