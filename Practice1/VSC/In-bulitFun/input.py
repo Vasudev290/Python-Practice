@@ -7,7 +7,7 @@ else:
     print('Min value is :', num2)
 
 
-num1= int(input('Enter 1 value:'))
+num1= int(input('Enter 1 value :'))
 num2= int(input('Enter 2 value:'))
 if num1 > num2 :
     print('Max value is :', num1)

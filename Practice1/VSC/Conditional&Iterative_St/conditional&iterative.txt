@@ -1,0 +1,31 @@
+what are the conditional statement
+             =====================
+2.if-else
+An if-else statement controls conditional branching. 
+Statements in the if-branch are executed only if the 
+condition evaluates to a nonzero value (or true ). 
+
+3.if-elif-else
+so the difference is that the code always checks to 
+see if an 'if' statement is true, checks 'elif' 
+statements only if each 'if' and 'elif' statement 
+above it is false, and 'else' runs only when the 
+conditions for all attached 'if' and 'elif' 
+statements are false.
+
+3.if-elif
+
+what are the iterative statement
+            ==================
+if we want to execute few statement, mulitple times we should go 
+for iterative statement
+
+1.for 
+if we want to execute some action for every element present 
+in sequnencs
+
+2.while
+
+Before that have to check 
+1.initization, 2.conditional 3.incre & decr
+  i=1,           i<=5          i=i+1
