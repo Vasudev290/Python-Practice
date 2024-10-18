@@ -1,0 +1,254 @@
+Operators in Python ;
+======================
+1.Arithmetic Operators
+2.Comparison / Relational Operators
+3.Logical Operators
+4.Bitwise Operators
+5.Assignment Operators
+6.Identity Operators and Membership Operators
+
+Arithmetic Operators;
+----------------------
+Arithmetic operators are symbols used to perform mathematical operations 
+on numerical values. In most programming languages, arithmetic operators 
+include 
+addition (+)       => result = 3 + 2  # Output: 5
+subtraction (-)    => result = 5 - 2  # Output: 3 
+multiplication (*) => result = 3 * 2  # Output: 6
+division (/)       => result = 6 / 2  # Output: 3.0
+Floor Division (//)=> result = 7 // 2  # Output: 3
+Expnentiation(**)  => result = 3 ** 2  # Output: 9
+modulus (%)        => result = 7 % 2  # Output: 1
+
+
+Comparison / Relational Operators
+---------------------------------
+Comparison operators in Python compare values and determine 
+relationships between them. These operators return either True or False. 
+It is based on whether the comparison is true or false.
+
+1.Equality Operators (==) 
+Equal to: True if both operands are equal
+a = 9
+b = 5
+c = 9
+
+# Output
+print(a == b)  #False
+print(a == c)  #True
+
+2.Inequality Operators (!=)
+Not equal to: True if operands are not equal
+a = 9
+b = 5
+c = 9
+
+# Output
+print(a != b) True
+print(a != c) False
+
+3.Greater than (>)
+Greater than: True if the left operand is greater than the right
+a = 9
+b = 5
+
+# Output
+print(a > b) True
+print(b > a) False
+
+4.Less than (<)
+Less than: True if the left operand is less than the right
+a = 9
+b = 5
+
+# Output
+print(a < b) False
+print(b < a) True
+
+5.Greater than or Equal to (>=)
+Greater than or equal to: True if left operand is greater than or equal to the right
+a = 9
+b = 5
+c = 9
+
+# Output
+print(a >= b) True
+print(a >= c) True 
+print(b >= a) False
+
+6.Less than or Equal to (<=)
+Less than or equal to: True if left operand is less than or equal to the right
+a = 9
+b = 5
+c = 9
+
+# Output
+print(a <= b) False
+print(a <= c) True
+print(b <= a) True
+
+
+Logical Operators
+-----------------
+Perform logical operations on Boolean values, which are either 
+True or False. Some examples include and, or, and not.
+1. and
+Returns True if both the operands are true
+result = (5 > 3) and (8 > 5)  # Returns True
+a = 10
+b = 12
+c = 0
+if a and b and c:
+    print("All the numbers have boolean value as True")
+else:
+    print("Atleast one number has boolean value as False")
+#Atleast one number has boolean value as False
+
+2. or
+Returns True if either of the operands is true
+result = (5 > 3) or (8 < 5)  # Returns True
+a = 10
+b = 12
+c = 0
+if a or b or c:
+    print("Atleast one number has boolean value as True")
+else:
+    print("All the numbers have boolean value as False")
+#Atleast one number has boolean value as True
+
+
+3. not
+Returns True if the operand is false
+result = not (5 > 3)  # Returns False
+
+Assignment Operators
+---------------------
+These are the special symbols that carry out arithmetic, 
+logical, and bitwise computations. The value the operator 
+operates on is known as the Operand.
+1. Assignment Operators (=) 
+Assign the value of the right side of the expression to the left side operand
+c = a + b 
+# Assigning values using 
+# Assignment Operator 
+a = 3
+b = 5
+
+c = a + b 
+
+# Output 
+print(c) #8
+
+2. addition Assignment Operators (+=)
+Add right side operand with left side operand and then assign the result to left operand	
+a += b  
+a = 3
+b = 5
+
+# a = a + b
+a += b
+
+# Output
+print(a) #8
+
+3. Subtract  Assignment Operators (-=)
+Subtract right side operand from left side operand and then assign the result to left operand	
+a -= b  
+a = 3
+b = 5
+
+# a = a - b
+a -= b
+
+# Output
+print(a) #-2 
+
+4. Multiply  Assignment Operators(*=)
+Multiply right operand with left operand and then assign the result to the left operand	
+a *= b  
+a = 3
+b = 5
+
+# a = a * b
+a *= b
+
+# Output
+print(a)  #15
+
+5. Divide  Assignment Operators(/=)
+Divide left operand with right operand and then assign the result to the left operand	
+a /= b
+a = 3
+b = 5
+
+# a = a / b
+a /= b
+
+# Output
+print(a) #0.6
+
+6. Module Assignment Operators (%=)
+Divides the left operand with the right operand and then assign the remainder to the left operand	
+a %= b  
+a = 3
+b = 5
+
+# a = a % b
+a %= b
+
+# Output
+print(a) #3
+
+7. floor division Assignment Operators (//=)
+Divide left operand with right operand and then assign the value(floor) to left operand	
+a //= b   
+a = 3
+b = 5
+
+# a = a // b
+a //= b
+
+# Output
+print(a) #0
+
+8. exponentiation Assignment Operators (**=)
+Calculate exponent(raise power) value using operands and then assign the result to left operand	
+a **= b   
+a = 3
+b = 5
+
+# a = a ** b
+a **= b
+
+# Output
+print(a) #243
+
+Special Operator
+    a)identity operators   - is , is not 
+	b)Membership operators - in , not in 
+
+Identity Operators:  
+- address comparision
+
+a = 100 
+b = 100 
+print(a is not b)
+	
+== operator vs is Operator 
+---------------------------
+
+a = 100 
+b = 100 
+print(a is b) # True
+print(a == b) # True
+
+
+ == operator is for content comparision
+ is - operator is for address comparision
+
+Membership Operators: in , not in 
+
+enames=['rahul','sonia','priyanka']
+'rahul' in enames  -> True 
+
+to Check whether given value/element present in list or not 

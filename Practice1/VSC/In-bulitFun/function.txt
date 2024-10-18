@@ -1,0 +1,31 @@
+Type of function ?
+user defined function and predefined/in-bulid function
+
+In-bulid function:
+=====================
+input() : Reading data from keyboard
+print() : print the value in console
+type()  : what type of data
+id () : 
+eval()
+len()
+count()
+min()
+max()
+
+datatypes related function:
+============================
+int()
+float()
+str()
+complex()
+bool()
+list()
+tuple()
+set()
+dict()
+range()
+bytes()
+bytearray()
+frozenset()
+None()
