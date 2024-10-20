@@ -1,6 +1,6 @@
 #Set {}
 #Delete operation
-# remove(),pop(),clear(),discard()
+#remove(),pop(),clear(),discard()
 #remove - it remove specified element from  set
 #discard - it remove specified element from  set
 

@@ -1,10 +1,9 @@
 #Set{}
 """*is a collection, which is unordered and unchangeble, unindexed. no duplicate members
 *Any type of data can be stored.
-*if you want to represent group of unique elements/values as one entity, nothing set
+*if you want to represent group of unique elements/values as one entity, nothing but set
 and insertion order is not preserved (no order gurantee), and no indexing concept 
 **we cannot modify the set items but we can add or remove items.
-*sets are unordered. 
 CRUD opration
 create - set(), copy()
 Read - 
