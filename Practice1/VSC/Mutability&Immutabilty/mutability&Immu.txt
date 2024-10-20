@@ -5,7 +5,7 @@ List[]
 ------
 *is a collection, which is ordered and changeble,allows duplicate members.
 *Any type of data can be stored.
-*We can modify the list item,we can add(),remove(),insert(),append(),extend() and pop()
+*We can modify the list item,we can remove(),insert(),append(),extend() and pop()
 *list is a mutability objects.
 Read - count(), index()
 update -append(), insert(),extend(),sort(),reverse( )
@@ -16,7 +16,10 @@ Tuple()
 *is a collection ,which is ordered and unchangeble,allows duplicate members
 *Any type of data can be stored.
 *we cannot modify the tuple items
+tuple is a immutability
 *we cannot add or remove
+Read -index(), slice(), count()
+*we cannot update and Delete once object is created, we can't change it content.
 
 Set{}
 -----
@@ -24,10 +27,11 @@ Set{}
 *Any type of data can be stored.
 **we cannot modify the set items but we can add or remove items.
 *sets are unordered. add(),update(),remove(),pop()
-
+*mutability
 Dict{}
 -----
 *is a collection, which is order and changeble,no duplicate members
 *Any type of data can be stored.
 *key:value pair {"id":101,"name":"vasu"}
 *get(),keys(),values()and items()
+*mutability
