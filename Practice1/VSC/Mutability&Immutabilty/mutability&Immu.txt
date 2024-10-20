@@ -1,0 +1,33 @@
+python collection(Array)
+List => [], tuple=>(), set{}, dict{}
+
+List[]
+------
+*is a collection, which is ordered and changeble,allows duplicate members.
+*Any type of data can be stored.
+*We can modify the list item,we can add(),remove(),insert(),append(),extend() and pop()
+*list is a mutability objects.
+Read - count(), index()
+update -append(), insert(),extend(),sort(),reverse( )
+Delete - remove(),clear(),pop()
+
+Tuple()
+-------
+*is a collection ,which is ordered and unchangeble,allows duplicate members
+*Any type of data can be stored.
+*we cannot modify the tuple items
+*we cannot add or remove
+
+Set{}
+-----
+*is a collection, which is unordered and unchangeble, unindexed. no duplicate members
+*Any type of data can be stored.
+**we cannot modify the set items but we can add or remove items.
+*sets are unordered. add(),update(),remove(),pop()
+
+Dict{}
+-----
+*is a collection, which is order and changeble,no duplicate members
+*Any type of data can be stored.
+*key:value pair {"id":101,"name":"vasu"}
+*get(),keys(),values()and items()
