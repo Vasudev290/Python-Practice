@@ -13,3 +13,21 @@ def login() :
 login()
 login()
 we can invoke function in end number of times.
+
+
+function roadmap
+-------------------
+1.Function -> 2.innerFunction -> 3.recursion function -> 4.LambdaFunction -> 5.Decorators -> 6.Generators
+
+1.Function ->  a block of code that performs a specific task and can be reused multiple times. 
+2.innerFunction -> a function that's defined within another function. 
+3.recursion -> a technique that involves a function calling itself:
+4.LambdaFunction -> an anonymous function (i.e., defined without a name) that can take any number of arguments but, unlike normal functions, evaluates and returns only one expression.
+5.Decorators ->  a design pattern in Python that allows a user to add new functionality to an existing object without modifying its structure.
+6.Generators -> a function or expression that produces a sequence of values one at a time
+
+
+Python function - variable are two types:
+
+1.local variable : inside function only
+2.global variable : entire file/module
