@@ -31,3 +31,31 @@ Python function - variable are two types:
 
 1.local variable : inside function only
 2.global variable : entire file/module
+
+
+Lammbda function / anonymous (Nameless function)
+----------------------------------------------------
+instence user => 
+In python we have in-built function
+
+map() - map(function,iterable)
+filter() -filter(function,iterable)
+reducer() - (function,iterable)- functiontools
+ 
+Normal function                   LambdaFunction (no def keyword,no function name,no return statement)
+---------------                  ----------------
+def add(a,b):                   add= lambda a,b : a+b
+    return a+b                  print(add(10,20))
+add(10,20)
+
+syntex of lambda:
+================
+lambda arguments:expression
+lambda a,b: a+b ;
+
+Advantage:
+instance user
+consice code
+by using lambda, we can write short code, improving code readibility.
+
+map(1,2) - map(function,iterable)
