@@ -1,0 +1,15 @@
+Function
+------------
+A function in Python is a block of code that performs a specific task and 
+can be reused multiple times. 
+how to create a function  using def key word
+                                ===
+A group of statement for specfic prepase whenever we want we can invoke the function.
+syntex:
+--------
+def login() :
+   print('login')  -> code reusability
+
+login()
+login()
+we can invoke function in end number of times.
