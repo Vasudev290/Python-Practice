@@ -1,7 +1,7 @@
 #Decorater function;
 #Decorator is function, it takes function as argument and return modify function 
 
-""" def outer1():
+def outer1():
     print("Outer function")
 
     def inner():
@@ -10,7 +10,7 @@
     inner()
     inner()
 
-outer1() """
+outer1()
 
 def outer():
     print("Outer function")
@@ -25,7 +25,7 @@ value= outer()
 print(value) #outer function #100
 
 
-""" def outer():
+def outer():
     print("Outer function")
 
     def inner():
@@ -34,4 +34,4 @@ print(value) #outer function #100
 
 result=outer()
 #print(result)
-result() """
+result()

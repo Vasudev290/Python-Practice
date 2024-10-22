@@ -1,0 +1,27 @@
+Modules
+---------
+python file acting as Modules
+Modules contains member
+a=10,
+b=20 
+def cal_age():   #function
+    pass
+
+class Employee:   #class
+    pass
+
+
+python Modules two types of Modules
+--------------------------------------
+1. user Modules 
+2. inbulit Modules
+
+Modules contains - variable st, function st, class st-> Modules members
+
+inbulit Modules of python
+-------------------------
+import math
+import os
+import sys
+import csv
+import json

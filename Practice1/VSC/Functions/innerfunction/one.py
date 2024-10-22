@@ -38,7 +38,7 @@ def outer():
 
     #return 100,200 #(100,200)
     #return 'Hello,Good Morning'
-    return inner #inner function
+    return inner #inner function or called by reference (return)
 
 
 result = outer() 
