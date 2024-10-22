@@ -59,3 +59,10 @@ consice code
 by using lambda, we can write short code, improving code readibility.
 
 map(1,2) - map(function,iterable)
+
+
+
+Decorator function
+----------------------
+*allows you to modify or extend the behavior of functions or methods without changing their actual code.
+*Decorator is function, it takes function as argument and return modify function 

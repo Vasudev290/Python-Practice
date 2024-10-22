@@ -18,7 +18,7 @@ add('Hello','Gm') #HelloGm argument #concatenation
 
 
 #Function can perform end no of times;
-def wish (a,b,c,d): # execute some business logic #finally return some value
+def wish(a,b,c,d): # execute some business logic #finally return some value
      r1=a+b+c+d+100
      return r1
 

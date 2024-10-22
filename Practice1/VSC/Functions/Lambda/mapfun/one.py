@@ -22,7 +22,7 @@ print(marks)     #[35, 38, 49, 74, 63, 84, 42]
 print(new_marks) #[36, 39, 50, 75, 64, 85, 43]
 
 #What exactly Map expecting; 
-#Map expecting map(1,2) 1 is function, 2 is iterable ;
+#Map expecting map(1,2) 1 is function, 2 is iterable/sequnce ;
 marks=[35,38,49,74,63,84,42]
 
 def add_mark(mark):
