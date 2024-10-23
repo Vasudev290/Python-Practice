@@ -21,7 +21,78 @@ Modules contains - variable st, function st, class st-> Modules members
 inbulit Modules of python
 -------------------------
 import math
+['__doc__', '__loader__', '__name__', '__package__', '__spec__', 'acos', 
+'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'cbrt', 'ceil', 'comb', 
+'copysign', 'cos', 'cosh', 'degrees', 'dist', 'e', 'erf', 'erfc', 'exp', 
+'exp2', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 
+'gamma', 'gcd', 'hypot', 'inf', 'isclose', 'isfinite', 'isinf', 'isnan', 
+'isqrt', 'lcm', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'log2', 'modf', 
+'nan', 'nextafter', 'perm', 'pi', 'pow', 'prod', 'radians', 'remainder', 'sin', 
+'sinh', 'sqrt', 'sumprod', 'tan', 'tanh', 'tau', 'trunc', 'ulp']
+
 import os
+
 import sys
 import csv
 import json
+
+various posiibilities to import Modules name
+ex: import central 
+import os 
+import sys
+import csv
+
+import Module1, Module2, Module3 #importing at a time in the import
+example: import os, sys, csv
+
+import modulename as mn #Alise_name
+ex: import math as rajini
+
+one more method:
+-------------------
+from modulename import members
+#from math import pi
+print(pi)
+
+or 
+
+from modulename import *
+
+
+random Modules
+---------------
+Several function to generate reandom values.
+
+['BPF', 'LOG4', 'NV_MAGICCONST', 'RECIP_BPF', 'Random', 'SG_MAGICCONST', 'SystemRandom', 'TWOPI', '_ONE', 
+'_Sequence', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', 
+'__spec__', '_accumulate', '_acos', '_bisect', '_ceil', '_cos', '_e', '_exp', '_fabs', '_floor', '_index', '_inst', 
+'_isfinite', '_lgamma', '_log', '_log2', '_os', '_pi', '_random', '_repeat', '_sha512', '_sin', '_sqrt', '_test', 
+'_test_generator', '_urandom', '_warn', 'betavariate', 'binomialvariate', 'choice', 'choices', 'expovariate', 
+'gammavariate', 'gauss', 'getrandbits', 'getstate', 'lognormvariate', 'normalvariate', 'paretovariate', 'randbytes', 
+'randint', 'random', 'randrange', 'sample', 'seed', 'setstate', 'shuffle', 'triangular', 'uniform', 'vonmisesvariate', 'weibullvariate']
+
+1.print 10 random number rangw between 10 to 99
+  #randint function => To generate random integer between given numbers
+
+  from random import randint
+  for i in range(10):
+       print(randint(10,100))
+
+  #randrange function => it's genarate random number from the range
+  randrange([starting,Ending,stepping])
+  from random import randrange
+  for i in range(10):
+       print(randrange(100,500,10))
+
+  #random function => To generate float values between 0 to 1
+  from random import random
+  for i in range(10):
+     print(random())
+
+  #Choise function => It won't genarate any random numbers but, it will return random element from the list,tuple,set and Sequence
+  enames=['varun','vara','vasu',''vinay']
+  from random import Choise
+  for i in range(20):
+       print(Choise(list))
+
+  #uniform function
