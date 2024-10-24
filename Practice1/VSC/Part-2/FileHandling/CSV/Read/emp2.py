@@ -6,7 +6,7 @@ user_list=list(csv_obj)
 
 
 for user in user_list:
-    print(user)
+    print(user[1])
 '''
 ['id', 'name', 'gender', 'Email']
 ['1', 'Vivianne', 'Female', 'vdy0@home.pl']
@@ -111,4 +111,4 @@ for user in user_list:
 ['100', 'Kennedy', 'Male', 'khanfrey2r@oakley.com']
 '''
 
-fp.close()
+fp.close()  

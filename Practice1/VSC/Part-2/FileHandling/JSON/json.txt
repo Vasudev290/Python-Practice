@@ -1,0 +1,56 @@
+what is json ?
+JavaScript Object Notation (JSON) is a standardized format commonly used 
+to transfer data as text that can be sent over a network. It's used by 
+lots of APIs and Databases, and it's easy for both humans and machines 
+to read. JSON represents objects as name/value pairs, just like a Python 
+dictionary.
+In
+
+In previous exchangeing data between languanges is xml(exchangable markup language) format now a days json they using.
+xml - is heavy weight proggramming language
+json - is light weight proggramming language
+* Json is complete JavaScript data type
+                   ====================
+
+
+JavaScript objects: (Json) 
+{                                 
+    "eid":101,
+    "ename":"Vasu",
+    "esal":"45000"
+}
+Python dict:        (Json)
+{
+    'eid':101,
+    'ename':'Dev',
+    'esal':'45000'
+}
+
+
+
+Python Datatype;                   JavaScript Datatype;
+1.Int                              1.number
+2.float
+3.str                              2.srting
+4.bool                             3.boolean (true,false)
+5.complex
+
+6.list                             [ ] - array : Object
+7.tuple
+8.set
+9.dict                             { } - object: object
+
+10.None                            null
+
+11.frozenset
+12.bytes
+13.bytearray
+14.range
+
+json methods
+-------------
+               JSON
+            ----------
+loads -json to Python                            dumps -Python to json
+load-files handling (read json file to dict)     dump - file handling (readpython_dict file to json )
+

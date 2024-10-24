@@ -15,4 +15,5 @@ for i in range(num):
     Emp_Loc = input("Enter Eloc :")
 
     csv_obj.writerow([Emp_id,Emp_Name,Emp_Sal,Emp_Loc])
+    print("Data Inserted Successfully!")
 fp.close()
