@@ -1,0 +1,3 @@
+Write and read or w+ mode opens the file for writing as well as reading. 
+It overwrites the file if it exists; else, it creates a new file for writing and reading. 
+The plus(+) sign either adds reading or writing mode to an existing write or read mode.

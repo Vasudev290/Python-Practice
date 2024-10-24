@@ -1,0 +1,1 @@
+Exclusive creation mode for write operation

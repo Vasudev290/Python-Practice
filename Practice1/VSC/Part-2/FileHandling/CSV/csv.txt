@@ -1,0 +1,13 @@
+#CSV -> Comma-Separated values
+
+CSV (Comma Separated Values) is a simple file format for storing 
+tabular data in a spreadsheet or database. A CSV file is a plain text 
+file that stores tabular data (numbers and text). Each line in the file 
+represents a data record.
+
+import CSV
+methods of csv ;
+----------------
+1. reader()
+2. writer()
+3. writerow()

@@ -1,0 +1,67 @@
+#File handling
+---------------
+
+we have two type of files 
+==========================
+1. text files =>  any  files it contains character data we called as text files.
+2. binary files => audio,video,images this are the binary files
+
+to maintain this two files like text, binary they provide in-bulit modules.
+
+Text files => character data
+
+binary Files => audio, video, images
+
+open() -- method/in-bulit function name is open()
+fp = open(file_name, mode)  #Mode is important
+
+fp.close()
+
+7 type mode is there; Read and write
+--------------------   -------------
+Text files;                   Binary files
+-----------                   --------------
+r        r+                   rb           rb+
+w        w+                   wb           wb+
+a        a+                   ab           ab+
+x                             xb
+
+fp = open('one.json','r')  #if we not given any mode default mode is 'read' only;
+
+type of read method;
+--------------------
+
+read() -  whole file 
+read(n) -  no of chartacter
+readline() - first line only
+readlines() - []
+
+type of write operation
+--------------------------
+1. write(str_value)
+2. writelines(list of lines)
+
+file text - modules
+==============
+r : read(whole file) open the existing file for read operation.filepoint :position at starting of file.
+    note: if file not avilable, we will get "fileNotfounderror"
+     
+r+ : read and write
+w : open the existing file for write operation.
+w+ (Write and Read Mode): if file is not there it'll create atuomatically (new file created)
+# both case w, w+ content is override only;
+
+a(append) : In append mode override not going to happen
+a+ : (append and read mode), Opens a file for both appending and reading.
+x(exclusive_mode) :exclusive creation mode
+
+
+fp=open()
+what  if fp - file pointer/file object
+various properties of file object.
+
+name  -one.text 
+mode  -w
+readable () - false
+writable ( ) True
+closed -True 
