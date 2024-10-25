@@ -1,0 +1,63 @@
+#Python Object orientaed programmimg language(OOPs)
+--------  -----------   ---------------   ------------
+Major OOP (object-oriented programming) concepts in Python include 
+Inheritance, 
+Polymorphism, 
+Data Abstraction, and 
+Encapsulation.
+Class, - Class is template, Data Type, Draft and design to create or concetrate object
+Object, - How to create object in python ;
+Syntex;
+-------
+class Account:
+    
+Account()
+
+#We can create end no of object in class
+#Class is template to create or concetrate end no of object
+#Once object is create, In memory location allacted in heap memory area
+
+#Function                                                #class
+----------                                              --------
+def add():                                               class Account:
+    pass                                                        pass
+
+add() #We can invoke end no of times                  a1=Account() #once object is create memory location allacted
+                                                      a2= Account()
+                                                      a3= Account()
+#Class Contains Variables and methods
+#In python, Everything is a objects.
+#With help of a1 we can access the class members.
+
+class Contains methods and Variables
+Variables= name:"vasu",age:"23"
+methods= behaviour
+
+
+what is types of Variables?
+
+Class variables are three types :
+--------- --------- -----------
+
+                         Org_Name: TCS  => Static variable
+
+            eid:101,                                       eid:102
+            ename:'Vasu'  <=== instence Variable  ====>    ename:'Dev' 
+            esal:45000                                     esal:55000      
+
+
+1.instence variables  -> any variable value is varied from object to object 
+2.Static variables  -> any variable value is not varied from object to object 
+                     #It's created to one copy and share it to all the members.
+3.Local variables  ->
+
+what is types of methods ?
+
+Class methods are three types:
+1.instence method
+2.class method 
+3.static method
+
+
+to intilize object vallues we need construtre
+how to create construtre

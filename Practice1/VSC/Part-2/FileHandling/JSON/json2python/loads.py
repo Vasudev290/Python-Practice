@@ -1,4 +1,4 @@
-#Convert into json data to python
+#Convert into json data to python dict
 
 import json
 emp_json='''{"eid":101,"ename":"Vasu","esal":"45000","avail":true}'''
