@@ -5,11 +5,14 @@ Inheritance,
 Polymorphism, 
 Data Abstraction, and 
 Encapsulation.
+
 Class, - Class is template, Data Type, Draft and design to create or concetrate object
 Object, - How to create object in python ;
+
 Syntex;
 -------
 class Account:
+    pass
     
 Account()
 
@@ -54,10 +57,60 @@ Class variables are three types :
 what is types of methods ?
 
 Class methods are three types:
+---------- ----- ------------
 1.instence method
 2.class method 
 3.static method
 
+constructor;
+Required - speacial method to intilize object values, we need constructor, constructor is special method.
+constructor method will execute automatically at the time of object createion.
+Note: We can't invoke constructor method explicitly 
+only once constructor will execute.
 
-to intilize object vallues we need construtre
-how to create construtre
+how to create constructor
+
+Syntex-
+--------
+Class Account:
+    def __init__(self):
+        pass
+
+
+
+Overall Methods in variables & methods
+--------- ---------- ------- ---------- 
+
+class Account:
+    min_Bal = 500                   #Static Varibale
+    
+    def __init__(self,id,name):     #Constructor
+        self.acc_id = id
+        self.acc_name = name
+    
+    def open_Account(self):         #Instence method
+        self.min_bal = 200
+        
+    @classmethod                    #Class method
+    def get_Min_Bal(cls):
+        pass
+    
+    @staticmethod                   #Static method
+    def cal_interest():
+        tax=5                       #Local variable
+        
+a1= Account(101,'Rahul')
+a2= Account(102,'Priya')
+
+print(a1.__dict__)
+print(a2.__dict__)
+
+
+Instence Variable
+-------- ---------   When to use ?
+If variable value is varied from object to object 
+
+
+Static Variable
+-------  --------
+If variable value is not varied from object to object go with static variable.
