@@ -3,7 +3,7 @@
 
 #How to create :
 #inside a constructor - using self. self is pointer, pointing to corrent object.
-#inside a instence method - using self variable
+#inside a instence variable - using self variable
 #outside a calss, using object ref 
 
 class Employee:

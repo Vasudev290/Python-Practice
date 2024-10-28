@@ -52,7 +52,7 @@ Class variables are three types :
 1.instence variables  -> any variable value is varied from object to object 
 2.Static variables  -> any variable value is not varied from object to object 
                      #It's created to one copy and share it to all the members.
-3.Local variables  ->
+3.Local variables  -> instence use
 
 what is types of methods ?
 
@@ -114,3 +114,37 @@ If variable value is varied from object to object
 Static Variable
 -------  --------
 If variable value is not varied from object to object go with static variable.
+
+Local Variable:
+-------- -------
+Instence use 
+
+
+Class Methods
+--------------
+In Python, a class method is a function that receives an instance as its first argument. 
+The instance is usually called self, but it can be named anything
+
+types of class methods;
+------ -------- ---------
+
+1.constructor
+2. instence method
+3. class method
+3. static method
+
+
+class Test:
+    def __init__(self):   #constructor
+        pass
+    
+    def m1(self):         #instence method
+        pass
+    
+    @classmethod          #class method
+    def m2(cls):
+        pass
+    
+    @staticmethod       #static method
+    def m3():
+        pass
