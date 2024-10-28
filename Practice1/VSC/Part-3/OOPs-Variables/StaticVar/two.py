@@ -3,6 +3,13 @@
 #Inside class, outside any method.
 #Inside constr, using classname
 
+'''
+Inside class, outside any method
+inside constructor, using class name
+inside instence method, using class name
+inside classmethod, using cls and class name
+inside static method using class name
+'''
 class Account:
     min_bal = 500             #Static Method
     
@@ -10,7 +17,7 @@ class Account:
         self.acc_id = id
         Account.Branch_Name = 'Marathahalli'
     
-    def set_bal(self):
+    def set_branchId(self):
         Account.branch_id = 421
     
     @classmethod
@@ -22,5 +29,12 @@ class Account:
         Account.tax = 10
     
 a1=Account(101)
-print(a1.__dict__)   #{'acc_id': 101}
+a2=Account(102)
+
+print(Account.__dict__)
+
+a1.set_branchId()
+a1.update_parent_Branch()
+a1.tax_calc()
+
 print(Account.__dict__)
