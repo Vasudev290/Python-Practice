@@ -324,3 +324,85 @@ print(c1.__dict__)
 
 {'acc_name': 'Vasu', 'acc_email': 'vasu@gmail.com', 'acc_id': 101, 'acc_Bal': 35000}
 {'acc_name': 'Deva', 'acc_email': 'deva@gmail.com', 'acc_id': 102, 'acc_Bal': 40000}
+
+
+Modules
+-------
+
+1. abc   *abc, @Abstractmethod
+2. json
+3. csv
+4. math
+5. random
+6. keyword
+
+
+
+#Sample Example of Abstractmethod
+
+#Bank.py
+--------
+from abc import *         #How to convert abstract class?
+class Bank:               #Any class extending ABC class, class constains atleast one abstract- We called as abstract class
+    @abstractmethod       #for object classes, we can't create object.
+    def cal_bal(self):    #child class - responsible to provide the implementation.
+        pass
+    
+#Account.py
+-----------
+from bank import Bank
+class Account(Bank):
+    
+    def __init__(self,name,email):             #Constructor
+        self.acc_name = name
+        self.acc_email = email
+        
+        
+    def open_account(self):
+        print("Account opened successfully.!")
+                                                     #instence Method
+    def cal_bal(self):
+        print("Account class - cal_bal method")
+        
+ 
+ #Have to use the current Account class functionlity in sa.py and ca.py
+         
+Account('Vasu','Vasukesavule@gmail.com')
+    
+#SA.py
+---------
+from account import Account
+
+class SA(Account):
+    pass
+
+
+#CA.py
+------
+from account import Account
+
+class CA(Account):
+    pass
+
+
+To Learn for 
+--- =--- -
+class
+how to create object
+constructor
+need super()
+Inheritance
+abstractmethod
+Polymorphism
+
+
+Abstraction     : hinding essential details. code Security
+                 how to achive abstraction in python? abc Modules - @abstractmethod, ABC class
+
+Encapsulation   : Binding data + method as single unit(Encapsulation unit) 
+                 instance methods(setters and getters method)
+
+Inheritance     :Reusing exisiting functionlity and adding new features.
+
+Polymorphism    :many forms
+                operators acting as many forms object acting as many forms.
