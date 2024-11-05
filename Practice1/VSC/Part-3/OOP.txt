@@ -62,7 +62,8 @@ Class methods are three types:
 2.class method 
 3.static method
 
-constructor;
+constructor method;
+---------- -------
 Required - speacial method to intilize object values, we need constructor, constructor is special method.
 constructor method will execute automatically at the time of object createion.
 Note: We can't invoke constructor method explicitly 
@@ -128,7 +129,7 @@ The instance is usually called self, but it can be named anything
 types of class methods;
 ------ -------- ---------
 
-1.constructor
+1. constructor
 2. instence method
 3. class method
 3. static method
@@ -195,7 +196,7 @@ Polymorphism ; poly - many; morphism - forms
 
 
 object - acting as many forms :account object acting as some times SA object, and current object
-operator - acting as many forms : +, *
+operator - acting as many forms : +(Adding,Concatenation), *(multiple,repetation)
 
 
 Inheritance concepts;

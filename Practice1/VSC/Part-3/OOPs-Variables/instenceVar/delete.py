@@ -8,7 +8,7 @@ class Account:
     def __init__(self):                   #Constructor
         self.acc_bal = 5000
     
-    def get_bal(self):                    #intence method
+    def get_bal(self):                    #intence variable
         return self.acc_bal
     
     def update_bal(self):                 #intence method

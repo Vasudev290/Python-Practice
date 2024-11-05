@@ -4,7 +4,7 @@ Class variables are three types :
 1.instence variables -> any variable value is varied from object to object
 2.Static variables -> any variable value is not varied from object to object 
                      #It's created to one copy and share it to all the members.
-3.Local variables
+3.Local variables    #instence use
 
 Class methods are three types:
 ---------- --------- ----------

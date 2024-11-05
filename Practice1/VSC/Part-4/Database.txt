@@ -1,0 +1,180 @@
+Databases ?
+------------
+A database is a file that is organized for storing data. 
+Most databases are organized like a dictionary in the sense that they map from keys to values.
+
+SQL Databases;
+---- ------------
+Sql   - based database =>    Oracle Db, MySql, Postgresal, Maria DB, Etc
+NoSql - based database =>    MongoDB, Casandra, Radis
+
+python Code snippet to connect your Database ?
+
+Driver Software required .
+
+mysql connector  : python package (pip install mysql-connector-python)
+pyMongoDB        : python package (pip install pymongo)
+Oracle DB        : python package
+
+SQL(RDBMS)                 NoSql(Non-RDBMS)
+--------------------------------------------------
+DB                          DB
+Tables                      collection
+rows                        document(JSON)
+Column                      filed
+
+How to dispaly installed modules;
+
+print(help('module'))
+
+
+How to use error handling in python? 
+
+try:    The try block lets you test a block of code for errors. 
+except: The except block lets you handle the error.
+finally: The finally block lets you execute code, regardless of the result of the try- and except blocks.
+raise: divide by zero.
+
+SQL - Database
+---- ------------ 
+SQL - Commands 
+---------------
+
+Step 1 -Install require software
+        (pip install mysql-connector-python)
+
+What is Mysql connect method ?
+it return mysql database connection objecty.
+enables Python programs to access MySQL databases, using an API
+
+
+Create
+--------
+
+#First Import the driver
+import mysql.connector
+try:
+    dbcon = mysql.connector.connect(
+        host="localhost", user="root", password="root", database="3pm")
+    mycursor = dbcon.cursor()
+    sql_Statement = '''
+                    create table employee(
+                        eid int,
+                        ename varchar(32),
+                        esal float,
+                        eloc varchar(32)
+                    );
+                    '''
+    mycursor.execute(sql_Statement)
+    dbcon.commit()
+    print("Table Created Successfully..!")
+
+except mysql.connector.DatabaseError as err:
+    if err:
+        print(err) #We can write "unable to connect in string"
+
+finally:
+   mycursor.close()
+   dbcon.close()
+
+
+Read
+----
+import mysql.connector
+
+try:
+    dbcon = mysql.connector.connect(
+        host="localhost", user="root", password="root", database="3pm")
+    mycursor = dbcon.cursor()
+    
+    mycursor.execute('select * from employee')
+    empdata = mycursor.fetchall()
+    
+    for emp in empdata:
+        print(emp)
+
+except mysql.connector.DatabaseError as err:
+    if err:
+        print("Unable to connect to database")
+    
+
+finally:
+    pass
+
+insert
+-------
+import mysql.connector
+
+try:
+    dbcon = mysql.connector.connect(
+        host="localhost", user="root", password="root", database="3pm")
+    mycursor = dbcon.cursor()
+    
+    sql_st = '''
+         insert into employee values(101,'Vasu',35000.00,'Bangalore'),(102,'Deva',45000.00,'Chennai');
+        '''
+        
+    mycursor.execute(sql_st)
+    dbcon.commit()
+    print("Data Inserted Successfully..!")
+    
+except mysql.connector.DatabaseError as err:
+    if err:
+        print(err)
+
+finally:
+    mycursor.close()
+    dbcon.close()
+
+insertmany
+---------
+import mysql.connector
+
+try:
+    dbcon = mysql.connector.connect(
+        host="localhost", user="root", password="root", database="3pm")
+    mycursor = dbcon.cursor()
+    
+    sql_st = '''
+                insert into employee(eid,ename,esal,eloc) values (%s,%s,%s,%s)
+             '''
+    data =[
+           (102,'Deva',56889,'New Dehli'),
+           (103,'Divya',66889,'Noida'),
+           (104,'Daya',76889,'Nellagiri')
+           ]
+        
+    mycursor.executemany(sql_st,data)
+    dbcon.commit()
+    print("Data Inserted Successfully..!")
+    
+except mysql.connector.DatabaseError as err:
+    if err:
+        print(err)
+
+finally:
+    mycursor.close()
+    dbcon.close()
+
+Delete
+--------
+import mysql.connector
+
+try:
+    dbcon = mysql.connector.connect(
+        host="localhost", user="root", password="root", database="3pm")
+    mycursor = dbcon.cursor()
+    sql_st = ''' delete from employee where eid = 104'''
+    
+    mycursor.execute(sql_st)
+    
+    dbcon.commit()
+    print("Deleted Successfully..!")
+    
+except mysql.connector.DatabaseError as err:
+    if err:
+        print("Unable to connect to database")
+    
+finally:
+    dbcon.close()
+    mycursor.close()
