@@ -1,0 +1,71 @@
+RegularExpersion:
+-----------------
+
+A regular expression (or RE) specifies a set of strings that matches it; 
+the functions in this module let you check if a particular string matches a given regular expression 
+
+To Devloper proggramming languages(complier and interpreter)
+To Validate Data
+to Validate fremework
+
+python modules: re
+------------------
+
+This modules contains several inbulit function to use Regular expersion
+
+List of bulit in function re :
+----- -- ------- ------------
+
+import re
+
+fullmatch()
+match()
+search()
+finditer()  -Return an iterator over all non-overlapping matches in the string. For each match, the iterator returns a Match object.
+findall()
+complie()
+sub()
+subn()
+
+Where to use Regular expersion ?
+------- ------------- ------------
+
+1. Given Number is valid mmobile or not ?
+2. Given email is valid gmail or not ?
+3. Given email is official company email or not ?
+4. Given text file contains - mobile and email id' 
+extract mobile and email ids from given file, write into separate file.
+
+How to construct regular expersion:
+
+character classes
+------------------
+a "character class" is a set of characters that you want to match
+[abcd] : either a or b or c or d
+[^abcd] : expect a and b and c and d
+[a-z] : any lower case alphabet symbol
+[A-Z] : any upper case alphabet symbol
+[a-zA-Z] : any case alphabet symbol
+[0-9] : any digit from 0-9
+[a-zA-Z0-9] : alphabet and Number / alpanumber
+[^a-zA-Z0-9] : alphabet and Number / alpanumber : special character
+
+quatifier classes
+------------------
+a* : any Number of a
+b* : any Number of b inculding zero Number
+a? : 
+a{4} : Exactly 4 a'
+
+special classes
+----------------
+you need to use a escape sequence prefix with a backslash ( \ ). 
+E.g., \. matches "." ; regex \+ matches "+" ; and regex \( matches "(" .
+
+\s : Space character
+\S : any character expect Space
+\d : any digit from 0-9
+\D : any character expect digit
+\w : any word character [a-zA-Z]
+\W : any character expect word(special character)
+. : any character inculding special character
