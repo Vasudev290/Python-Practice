@@ -1,0 +1,37 @@
+Assignment :
+-----------
+
+Invoke RestApi, Analze data and insert into
+1. CSV file
+2. JSON file
+3. MySql file
+4. MongoDB Database
+
+
+RestApi URL : https://jsonplaceholder.typicode.com/users
+Method type : Get
+Access Type : Public
+Req Fields : None
+
+Test Your Api:  - PostMan
+
+we have to python script to invoke RestApi
+How to invoke RestApi in python ?
+
+python module : requests[.get(), .post() .put(), .delete()]
+
+
+Assignment -2;
+
+RestApi URL : https://dummyjson.com/products
+Method type : Get
+Access Type : Public
+Req Fields : None
+
+invoke products api, and write into
+1. new Json file
+2. insert into Mysql Table
+
+Mysql Table
+Table Name : product
+culumn name : pid, pname, price, brand
