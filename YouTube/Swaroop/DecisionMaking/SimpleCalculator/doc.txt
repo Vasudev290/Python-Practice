@@ -1,0 +1,7 @@
+Simple Calculator Program (project)
+------ ---------- ------- ---------
+
+#Create a basic Calculator Program that performs addition, subtraction, multiplecation and division.
+#Ask the user to enter two numbers and choosen an operation.
+#Display the result accordingly
+#Handle potential errors gracefully.
