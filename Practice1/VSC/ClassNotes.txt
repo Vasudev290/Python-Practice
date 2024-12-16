@@ -1,0 +1,20 @@
+Mutability (list, set, dict)
+===========
+
+CRUD Operation List ;
+Create Normally Createing Value
+
+Read
+l1.index() Return index of first occurence of element
+l1.count() Return no of occurence
+
+Update
+l1.append() Appending the another value in List
+l1.extends() adding two element in single elements
+l1.reverse() reversing the total elements
+l1.sort()  sorting concept
+
+Delete
+l1.clear() remove all elements from given List
+l1.pop() remove last element from the List
+l1.remove() remove specified element from the List
